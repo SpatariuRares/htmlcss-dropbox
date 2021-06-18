@@ -23,8 +23,8 @@
 .center{
     margin: 0 auto;
 }
-.w-95{
-    width: 95%;
+.w-100{
+    width: 100%;
 }
 
 .w-80{
@@ -37,6 +37,13 @@
 
 .btn{
     padding: 5px 10px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+.azzurino{
+    background-color: #B4D0E7;
 }
 /* common */
 
@@ -60,11 +67,19 @@ header .nav li{
 header{
     height: 70px;
     line-height: 70px;
+    background-color: white;
+}
+
+header{
+    position: fixed;
+    z-index: 999;
+    padding: 0 20px;
 }
 
 
 
-header .nav a{
+
+header .nav li a{
     text-decoration: none;
     color: #000;
     padding: 0 20px;
