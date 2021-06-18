@@ -297,9 +297,41 @@ main{
     display: inline-block;
 }
 
+/* carateristiche */
+#carateristiche .col{
+    width: calc(100% / 3);
+}
+#carateristiche .image img{
+    object-fit: contain;
+}
+
+#carateristiche .image image,
+#carateristiche .image img{
+    width: 100%;
+    height: 250px;
+}
+
+#carateristiche p span{
+    text-decoration: underline;
+}
+
+#carateristiche .pr20{
+    padding-left: 20px;
+}
+
+#carateristiche .pl20{
+    padding-right: 20px;
+}
+
+#carateristiche .prl20{
+    padding: 0 20px;
+}
+
+/* carateristiche */
+
 /* main */
 /* debug */
-.debug header *{
+/* .debug header *{
     border: 1px solid red;
-}
+} */
 /* debug */
