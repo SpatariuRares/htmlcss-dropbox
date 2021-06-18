@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.clearfix{
+.clearfix::after{
     content: "" ; 
     clear:both; 
     display: table; 
@@ -33,6 +33,39 @@
 
 .w-60{
     width: 60%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+
+.fs13{
+    font-size: 13px;
+}
+
+.fs15{
+    font-size: 15px;
+}
+
+.fs30{
+    font-size: 30px;
+}
+
+.fs38{
+    font-size: 38px;
+}
+
+.fs60{
+    font-size: 60px;
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+
+.mb40{
+    margin-bottom: 40px;
 }
 
 .btn{
@@ -87,6 +120,142 @@ header .nav li a{
 
 /* header */
 
+
+/* jumbo */
+.jumbo{
+    padding-top: 70px;
+    height: 80vh;
+    margin-bottom: 180px;
+}
+
+.jumbo .text h1{
+    text-align: center;
+}
+
+.jumbo .text{
+    margin-top: 8%;
+}
+
+.jumbo .text>*{
+    margin-bottom: 50px;
+}
+
+.jumbo .text img{
+    width: 100%;
+    height: 100%;
+}
+
+.jumbo .text .w-40>*{
+    margin-bottom: 20px;
+}
+
+.jumbo .text .w-40>a{
+    display: inline-block;
+}
+
+/* jumbo */
+
+
+/* main */
+
+main{
+    display: block;
+}
+
+/* vendita */
+
+
+
+#vendita h2{
+    margin-bottom: 20px;
+}
+
+#vendita .stile-pagamento{
+    margin-bottom: 30px;
+}
+#vendita .stile-pagamento label{
+    margin-right: 30px;
+}
+
+/* collone */
+#vendita .colonne3{
+    width: calc(100% / 3);
+}
+
+#vendita .colonne3,.containter{
+   height: 900px;
+}
+
+#vendita .containter{
+    border: 1px solid lightgrey;
+}
+
+#vendita .containter .type{
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+#vendita .containter .info{
+    padding: 10px;
+}
+
+#vendita .frequenza{
+    margin-bottom: 20px;
+    color: lightgray;
+}
+
+
+
+#vendita .containter .mb40{
+    margin-bottom: 40px;
+}
+
+#vendita .containter .benefit{
+    padding-left: 1.7em;
+    text-indent: -0.7em;
+}
+
+#vendita .containter .btn{
+    display: block;
+    text-align: center;
+}
+
+#vendita .containter hr{
+    width: 30%;
+}
+
+#vendita .recap i{
+    color: blue;
+}
+/* collone */
+
+/* team */
+
+#vendita .team{
+    border: 1px solid lightgray;
+
+}
+
+#vendita .team>.text{
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+#vendita .team h3{
+    display: inline-block;
+}
+
+#vendita .space{
+    padding: 20px;
+}
+/* team */
+
+/* vendita */
+
+
+/* main */
 /* debug */
 .debug header *{
     border: 1px solid red;
