@@ -12,6 +12,10 @@
 
 
 /* common */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
 .f-left{
     float: left;
 }
@@ -101,9 +105,24 @@
 
 .btn{
     padding: 5px 10px;
-    background-color: blue;
-    color: white;
     text-decoration: none;
+}
+.blue{
+    background-color: #0061FF;
+    color: white;
+}
+
+.btn.blue:hover{
+     background-color: #3783ff;
+}
+
+.white{
+    color: #000;
+    background-color: white    ;
+}
+
+.btn.white:hover{
+     background-color: #f5f5f5;
 }
 
 .azzurino{
@@ -117,7 +136,7 @@ header ul,
 header .nav,
 header #logo,
 header .nav li{
-    display: inline;
+    display: inline-block;
 }
 
 header img{
@@ -147,6 +166,12 @@ header .nav li a{
     text-decoration: none;
     color: #000;
     padding: 0 20px;
+    display: inline-block;
+    height: 100%;
+}
+
+header .nav li a:hover{
+    border-bottom: 1px solid #0061FF;
 }
 
 /* header */
@@ -159,12 +184,9 @@ header .nav li a{
     margin-bottom: 180px;
 }
 
-.jumbo .text h1{
-    text-align: center;
-}
 
 .jumbo .text{
-    margin-top: 8%;
+    margin-top: 50px;
 }
 
 .jumbo .text>*{
@@ -214,7 +236,7 @@ main{
 }
 
 #vendita .colonne3,.containter{
-   height: 900px;
+   height: 1000px;
 }
 
 #vendita .containter{
@@ -306,8 +328,6 @@ main{
 }
 
 #partner .btn{
-    background-color: white;
-    color: #000;
     border: 1px solid black;
     display: inline-block;
 }
@@ -380,6 +400,38 @@ main{
     background-color: #FFD830;
 }
 
+#banner .client:hover img{
+    width: 60%;
+}
+
+#banner .client.one:hover{
+    border: 10px solid #c0e9ba;
+}
+
+#banner .client.two:hover{
+    border: 10px solid #53102b;
+}
+#banner .client.three:hover{
+    border: 10px solid #3d99bd;
+}
+#banner .client.four:hover{
+    border: 10px solid #fa5959;
+}
+#banner .client.five:hover{
+    border: 10px solid #ce2c44;
+}
+#banner .client.six:hover{
+    border: 10px solid #d5dfe7;
+}
+#banner .client.seven:hover{
+    border: 10px solid #29397a;
+}
+#banner .client.eight:hover{
+    border: 10px solid #ffe570;
+}
+
+
+
 #banner .client img{
     position: absolute;
     top: 50%;
@@ -415,10 +467,7 @@ main{
    transform: translate(-50%, -50%);
 }
 
-#banner .banner .btn{
-    background-color: white;
-    color: #000;
-}
+
 
 /* banner */
 
