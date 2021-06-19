@@ -309,9 +309,16 @@ main{
     text-align: center;
 }
 
-#vendita .containter hr{
-    width: 30%;
+#vendita .compra>*{
+    display: inline-block;
+    vertical-align: top;
 }
+
+#vendita .compra hr{
+    margin-top: 40px;
+}
+
+
 
 #vendita .recap i{
     color: #0866ff;
