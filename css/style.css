@@ -132,11 +132,12 @@ body{
 
 
 /* header */
-header ul,
+header .nav>ul,
 header .nav,
 header #logo,
-header .nav li{
+header .nav>ul> li{
     display: inline-block;
+    vertical-align: top;
 }
 
 header img{
@@ -170,8 +171,33 @@ header .nav li a{
     height: 100%;
 }
 
-header .nav li a:hover{
+header .nav>ul>li{
+    position: relative;
+}
+
+
+
+header .nav li:hover {
     border-bottom: 1px solid #0061FF;
+}
+
+header .nav li:hover .bonus{
+    display: inline-block;
+}
+
+
+header .bonus{
+    background-color: white;
+    color: #000;
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 200px;
+}
+
+header .bonus a{
+    display:  inline-block;
 }
 
 /* header */
@@ -527,8 +553,13 @@ footer .language i.fa-sort-up{
 
 
 /* footer */
-/* debug */
-/* .debug #banner>*{
+/* debug */ 
+
+/* .debug .nav.f-right *{
     border: 1px solid red;
-} */
+} 
+
+.debug .bonus{
+    border: 1px solid red;
+}  */
 /* debug */
