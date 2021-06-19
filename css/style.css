@@ -15,6 +15,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 .f-left{
     float: left;
@@ -60,6 +61,10 @@ body{
 
 .w-10{
     width: 10%;
+}
+
+.fs10{
+    font-size: 10px;
 }
 
 .fs13{
@@ -204,31 +209,35 @@ header .bonus a{
 
 
 /* jumbo */
-.jumbo{
+#jumbotron{
     padding-top: 70px;
+}
+
+#jumbotron .jumbo{
+    position: absolute;
     height: 80vh;
-    margin-bottom: 180px;
+    z-index: -1;
 }
 
 
-.jumbo .text{
-    margin-top: 50px;
-}
-
-.jumbo .text>*{
+#jumbotron{
     margin-bottom: 50px;
 }
 
-.jumbo .text img{
+#jumbotron .text{
+    margin-top: 50px;
+}
+
+#jumbotron .text>*{
+    margin-bottom: 50px;
+}
+
+#jumbotron .text img{
     width: 100%;
     height: 100%;
 }
 
-.jumbo .text .w-40>*{
-    margin-bottom: 20px;
-}
-
-.jumbo .text .w-40>a{
+#jumbotron .text .w-30>a{
     display: inline-block;
 }
 
@@ -262,7 +271,7 @@ main{
 }
 
 #vendita .colonne3,.containter{
-   height: 1000px;
+   min-height: 950px;
 }
 
 #vendita .containter{
@@ -305,11 +314,63 @@ main{
 }
 
 #vendita .recap i{
-    color: blue;
+    color: #0866ff;
 }
 /* collone */
 
 /* team */
+
+.contai {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.contai input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.contai:hover input ~ .checkmark {
+  background-color: #ccc;
+}	
+
+.contai input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.contai input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.contai .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: white;
+}
+
 
 #vendita .team{
     border: 1px solid lightgray;
@@ -324,6 +385,10 @@ main{
 
 #vendita .team h3{
     display: inline-block;
+}
+
+#vendita .containter.team{
+    min-height: 0px;
 }
 
 #vendita .space{
@@ -369,7 +434,7 @@ main{
 #carateristiche .image image,
 #carateristiche .image img{
     width: 100%;
-    height: 250px;
+   aspect-ratio: 1/1;
 }
 
 #carateristiche p span{
@@ -377,11 +442,11 @@ main{
 }
 
 #carateristiche .pr20{
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 #carateristiche .pl20{
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 #carateristiche .prl20{
@@ -396,6 +461,11 @@ main{
 }
 /* Dropbox_Business */
 /*banner */
+
+#banner{
+    background-color: #f5f5f5;
+}
+
 #banner .client{
     position: relative;
     aspect-ratio: 1/1;
@@ -431,7 +501,7 @@ main{
 }
 
 #banner .client.one:hover{
-    border: 10px solid #c0e9ba;
+    border: 10px solid #d0e9cd;
 }
 
 #banner .client.two:hover{
@@ -471,6 +541,13 @@ main{
    padding: 60px;
 }
 
+#banner .testo-centrale hr{
+   color: #e0e0e2;
+}
+
+
+
+
 #banner .testo-centrale img{
    width: 30%;
 }
@@ -486,13 +563,12 @@ main{
    color: #61082B;
 }
 
-#banner .banner>div{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+#banner .banner>div {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
 }
-
 
 
 /* banner */
@@ -525,6 +601,10 @@ footer ul li{
     color: white;
     text-decoration: none;
     padding: 5px 0;
+}
+
+footer ul li h3{
+    font-size: 20px;
 }
 
 footer ul li>a{
