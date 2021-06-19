@@ -133,6 +133,10 @@ body{
 .azzurino{
     background-color: #B4D0E7;
 }
+
+hr{
+    border: 1px solid #d9d9dc;
+}
 /* common */
 
 
@@ -315,7 +319,7 @@ main{
 }
 
 #vendita .compra hr{
-    margin-top: 40px;
+    margin: 40px 0;
 }
 
 
@@ -362,12 +366,11 @@ main{
   display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
+
 .contai input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the indicator (dot/circle) */
 .contai .checkmark:after {
     top: 50%;
     left: 50%;
@@ -504,7 +507,7 @@ main{
 }
 
 #banner .client:hover img{
-    width: 60%;
+    width: calc((100% + 20px) /2)
 }
 
 #banner .client.one:hover{
@@ -512,25 +515,25 @@ main{
 }
 
 #banner .client.two:hover{
-    border: 10px solid #53102b;
+    border: 10px solid #88214a;
 }
 #banner .client.three:hover{
-    border: 10px solid #3d99bd;
+    border: 10px solid #34b6e9;
 }
 #banner .client.four:hover{
-    border: 10px solid #fa5959;
+    border: 10px solid #ff5555;
 }
 #banner .client.five:hover{
-    border: 10px solid #ce2c44;
+    border: 10px solid #df314b;
 }
 #banner .client.six:hover{
-    border: 10px solid #d5dfe7;
+    border: 10px solid #dbe7f0;
 }
 #banner .client.seven:hover{
-    border: 10px solid #29397a;
+    border: 10px solid #3249a3;
 }
 #banner .client.eight:hover{
-    border: 10px solid #ffe570;
+    border: 10px solid #ffe676;
 }
 
 
