@@ -28,6 +28,17 @@ body{
 .center{
     margin: 0 auto;
 }
+
+.trasform-center-hor{
+    left: 50%;
+    transform: translate(-50% , 0);
+}
+
+.trasform-center-ver{
+    top: 50%;
+    transform: translate(0 , -50%);
+}
+
 .w-100{
     width: 100%;
 }
@@ -86,6 +97,28 @@ body{
 .fs60{
     font-size: 60px;
 }
+
+.fw900{
+    font-weight: 900;
+}
+
+.fw700{
+    font-weight: 700;
+}
+
+.fw500{
+    font-weight: 500;
+}
+
+.fw300{
+    font-weight: 300;
+}
+
+.fw100{
+    font-weight: 100;
+}
+
+
 
 .mb20{
     margin-bottom: 20px;
@@ -213,35 +246,29 @@ header .bonus a{
 
 
 /* jumbo */
-#jumbotron{
+
+.jumbo{
     padding-top: 70px;
+    height: calc(85vh + 70px);
+    position: relative;
+    margin-bottom: 200px;
 }
 
-#jumbotron .jumbo{
+
+.jumbo .text{
     position: absolute;
-    height: 80vh;
-    z-index: -1;
+    bottom: -80px;
 }
 
-
-#jumbotron{
+.jumbo .text>h1{
     margin-bottom: 50px;
 }
 
-#jumbotron .text{
-    margin-top: 50px;
-}
-
-#jumbotron .text>*{
-    margin-bottom: 50px;
-}
-
-#jumbotron .text img{
+.jumbo .text img{
     width: 100%;
-    height: 100%;
 }
 
-#jumbotron .text .w-30>a{
+.jumbo .text .w-30>a{
     display: inline-block;
 }
 
@@ -255,6 +282,58 @@ main{
 }
 
 /* vendita */
+.input {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.input input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.input:hover input ~ .checkmark {
+  background-color: #ccc;
+}	
+
+.input input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.input input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.input .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: white;
+}
+
+
+
 
 
 
@@ -330,57 +409,6 @@ main{
 /* collone */
 
 /* team */
-
-.contai {
-  position: relative;
-  padding-left: 35px;
-  cursor: pointer;
-}
-
-.contai input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.checkmark {
-  position: absolute;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-.contai:hover input ~ .checkmark {
-  background-color: #ccc;
-}	
-
-.contai input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-
-.contai input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.contai .checkmark:after {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 50%;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    background: white;
-}
-
 
 #vendita .team{
     border: 1px solid lightgray;
@@ -618,8 +646,8 @@ footer ul li h3{
 }
 
 footer ul li>a{
-    color: white;
-   text-decoration: none;
+    color: #ececec;
+    text-decoration: none;
 }
 
 footer .language{
