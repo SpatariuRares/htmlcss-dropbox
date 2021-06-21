@@ -373,7 +373,7 @@ main{
 }
 
 #vendita .containter .info{
-    padding: 10px;
+    padding: 20px;
 }
 
 #vendita .frequenza{
@@ -617,12 +617,26 @@ main{
 /* banner */
 
 /* domande */
-#domande .question{
+
+#domande .question *{
     padding: 20px 0 ;
+}
+#domande .question{
     border-top: 1px solid lightgray;
     border-bottom: 1px solid  lightgray;
 }
 
+
+#domande .hide{
+   display: none;
+}
+
+#domande .question:hover .fa-chevron-down{
+   display: none;
+}
+#domande .question:hover .hide{
+   display: inline-block;
+}
 /* domande */
 /* main */
 
