@@ -196,7 +196,7 @@ header .nav li{
 
 header{
     height: 70px;
-    line-height: 70px;
+    line-height: 69px;
     background-color: white;
 }
 
@@ -259,6 +259,7 @@ header .bonus a{
 
 
 .jumbo .text{
+    bottom: -80px;
     position: relative;
 }
 
@@ -266,8 +267,9 @@ header .bonus a{
     color: #000;
 }
 
-.jumbo .text>h1{
-    margin-bottom: 50px;
+
+.jumbo .text>div{
+    margin-top: 50px;
 }
 
 .jumbo .text img{
@@ -278,11 +280,6 @@ header .bonus a{
     display: inline-block;
 }
 
-.jumbo .text .w-60{
-    position: absolute;
-    bottom: -80px;
-    right: 0;
-}
 
 
 /* jumbo */
