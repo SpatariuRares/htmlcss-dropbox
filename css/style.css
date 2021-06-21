@@ -258,6 +258,10 @@ header .bonus a{
     position: relative;
 }
 
+.jumbo .text .fs30 a{
+    color: #000;
+}
+
 .jumbo .text>h1{
     margin-bottom: 50px;
 }
@@ -274,8 +278,8 @@ header .bonus a{
     position: absolute;
     bottom: -80px;
     right: 0;
-
 }
+
 
 /* jumbo */
 
