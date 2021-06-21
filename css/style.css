@@ -615,27 +615,34 @@ main{
 
 /* domande */
 
-#domande .question *{
+#domande .question{
     padding: 20px 0 ;
 }
 #domande .question{
     border-top: 1px solid lightgray;
     border-bottom: 1px solid  lightgray;
-    transition: height 2s;
 }
 
 
 #domande .hide{
-    color: #919499;
-    display: none;
+    color: white;
+    height: 0px;
+    overflow: hidden;
+    padding-top: 0px;
+    transition: all 0.5s; 
 }
 
 #domande .hide>a{
-    color: #919499;
+    color: white;
+    transition: all 0.5s;
 }
 
-#domande .question .fa-chevron-down{
-   transition: transform 0.5s; ;
+#domande .fa-chevron-down{
+   transition: transform 0.5s;
+}
+
+
+#domande .question .clearfix:hover{
 }
 
 #domande .question:hover .fa-chevron-down{
@@ -643,6 +650,13 @@ main{
 }
 #domande .question:hover .hide{
    display: inline-block;
+   height: 120px;
+   padding-top: 20px;
+   color: #919499;;
+}
+
+#domande .question:hover .hide a{
+   color: #919499;;
 }
 /* domande */
 /* main */
