@@ -482,7 +482,7 @@ main{
 #carateristiche .image image,
 #carateristiche .image img{
     width: 100%;
-   aspect-ratio: 1/1;
+    aspect-ratio: 1/1;
 }
 
 #carateristiche p span{
@@ -629,6 +629,7 @@ main{
 #domande .question{
     border-top: 1px solid lightgray;
     border-bottom: 1px solid  lightgray;
+    transition: height 2s;
 }
 
 
@@ -636,8 +637,12 @@ main{
    display: none;
 }
 
+#domande .question .fa-chevron-down{
+   transition: transform 0.5s; ;
+}
+
 #domande .question:hover .fa-chevron-down{
-   display: none;
+   transform: rotate(180deg);
 }
 #domande .question:hover .hide{
    display: inline-block;
