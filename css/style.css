@@ -183,7 +183,6 @@ header .nav,
 header #logo,
 header .nav>ul> li{
     display: inline-block;
-    vertical-align: top;
 }
 
 header img{
@@ -253,7 +252,6 @@ header .bonus a{
 
 .jumbo{
     padding-top: 70px;
-    position: relative;
     margin-bottom: 200px;
 }
 
@@ -351,12 +349,6 @@ main{
     margin-bottom: 20px;
 }
 
-#vendita .stile-pagamento{
-    margin-bottom: 30px;
-}
-#vendita .stile-pagamento label{
-    margin-right: 30px;
-}
 
 /* collone */
 #vendita .colonne3{
