@@ -634,7 +634,12 @@ main{
 
 
 #domande .hide{
-   display: none;
+    color: #919499;
+    display: none;
+}
+
+#domande .hide>a{
+    color: #919499;
 }
 
 #domande .question .fa-chevron-down{
