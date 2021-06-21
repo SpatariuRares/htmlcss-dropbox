@@ -249,15 +249,13 @@ header .bonus a{
 
 .jumbo{
     padding-top: 70px;
-    height: calc(85vh + 70px);
     position: relative;
     margin-bottom: 200px;
 }
 
 
 .jumbo .text{
-    position: absolute;
-    bottom: -80px;
+    position: relative;
 }
 
 .jumbo .text>h1{
@@ -270,6 +268,13 @@ header .bonus a{
 
 .jumbo .text .w-30>a{
     display: inline-block;
+}
+
+.jumbo .text .w-60{
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+
 }
 
 /* jumbo */
