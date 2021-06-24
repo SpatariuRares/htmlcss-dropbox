@@ -241,10 +241,13 @@ header .bonus{
     position: absolute;
     top: 70px;
     left: 0;
-    width: 200px;
     height: 0px;
     overflow: hidden;
     transition: height   0.5s; 
+}
+
+header .bonus li{
+    white-space: nowrap;
 }
 
 header .bonus a{
