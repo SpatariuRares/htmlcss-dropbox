@@ -263,8 +263,7 @@ header .bonus a{
 
 
 .jumbo .text{
-    bottom: -80px;
-    position: relative;
+   margin-top: 80px;
 }
 
 .jumbo .text .fs30 a{
@@ -282,6 +281,16 @@ header .bonus a{
 
 .jumbo .text .w-30>a{
     display: inline-block;
+}
+
+.text .clearfix{
+    position: relative;
+}
+
+.text .w-60 {
+    position: absolute;
+    right: 0;
+    bottom: -80px;
 }
 
 
