@@ -232,6 +232,7 @@ header .nav li li:hover {
 
 header .nav li:hover .bonus{
     height: 205px;
+    z-index: 999;
 }
 
 
