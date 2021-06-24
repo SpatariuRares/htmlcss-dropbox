@@ -599,7 +599,7 @@ main{
 #banner .testo-centrale {
     padding:  60px 60px 0 60px;
     aspect-ratio: 4/3;
-    overflow: scroll;
+    overflow: auto;
 }
 
 #banner .testo-centrale hr{
